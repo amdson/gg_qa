@@ -1,0 +1,8 @@
+Project for querying pdfs for relevant information, possibly in the context of other explanatory documents. 
+PDF may be too large for LLM context, should have capability to query PDF with text search and to query vector embedded chunks. 
+Embed PDF at page level. Assume eventual search API, for now allow for in-memory search 
+with stand-in class that just runs all-to-all on numpy. Include functionality to cache embeddings on disc. 
+PyMuPDF to search pdf text, with potential for fuzzy search functions
+PydanticAI for LLM queries, code initially written for OpenRouter
+Queries are initally unstructured, simply attempting to answer user query with factual information. 
+Codebase should contain classes and functions for handling pdf + context, with demo notebook for testing with pre-downloaded pdf
