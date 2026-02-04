@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gg_qa"
+version = "0.1.0"
+description = "PDF Q&A system with vector search and LLM integration"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Author", email = "author@example.com"}
+]
+dependencies = [
+    "pymupdf>=1.23.0",
+    "numpy>=1.24.0",
+    "pydantic>=2.0.0",
+    "pydantic-ai>=0.0.10",
+    "openai>=1.0.0",
+    "httpx>=0.25.0",
+    "rapidfuzz>=3.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "jupyter>=1.0.0",
+    "ipykernel>=6.0.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
