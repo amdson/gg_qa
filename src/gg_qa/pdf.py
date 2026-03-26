@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Iterator
 
-import fitz  # PyMuPDF
+import pymupdf
 from rapidfuzz import fuzz, process
 
 
